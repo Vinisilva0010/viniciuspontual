@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "ABOUT ME",
+    "bio_1": "I hold a B.S. in Computer Science and have spent the last 3+ years focused on blockchain, mainly Solana. My core stack is Rust, Anchor, and TypeScript, plus Python for automations.",
+    "bio_2": "I build and run trading bots for myself and have developed custom flash loan and arbitrage bots for clients. On the security side, I build backend layers that monitor system access alongside AI agents to catch and block exploits before damage happens.",
+    "bio_3": "I also take on projects to design and build complete dApp interfaces from scratch with high visual quality. I've built RWA and DePIN projects for hackathons that ended up having their codebases acquired by companies.",
+    "bio_4": "I run Zanvexis to manage these initiatives, and I'm currently prepping for a master's in bioinformatics, connecting data analysis, AI, and crypto."
+  },
+  "skills": {
+    "title": "TECHNICAL SKILLS",
+    "languages_title": "Languages & Real-World Use",
+    "rust_desc": "Low-level security, high-throughput systems, trading bots, and core Solana infrastructure.",
+    "go_desc": "Concurrent and resilient backends with relational databases. Easy to maintain, fast, and rock-solid.",
+    "python_desc": "Advanced data analysis, automation pipelines, specialized security tooling, and high-speed search engines.",
+    "typescript_desc": "Full-stack development with Next.js, React, and Node for high-fidelity web dApps and platforms.",
+    "db_desc": "Relational architecture with PostgreSQL and raw SQL, optimized for Go and Rust services.",
+    "blockchain_title": "Blockchain & Web3",
+    "backend_title": "Backend & Infrastructure",
+    "security_title": "Testing & Security"
+  },
+  "projects": {
+    "title": "PROJECTS & PRODUCTION ARCHITECTURES",
+    "subtitle": "Since January 2024, operating through Zanvexis to engineer high-throughput infrastructure and mission-critical systems for clients.",
+    "view_case": "Read full case study →",
+    "items": {
+      "ssi_identity": {
+        "title": "Verifiable Identity Layer (SSI) & Trust Proofs",
+        "category": "Blockchain Security / Solana",
+        "description": "Self-sovereign identity framework designed for institutional yield and DeFi on Solana. Implements private KYC via Zero-Knowledge Proofs (ZKP), hardware wallet authorization, private compliance, and cryptographically auditable yield provenance."
+      },
+      "solana_auth_sdk": {
+        "title": "Dual Access-Control & PDA Authorization SDK",
+        "category": "Developer Tooling / Rust & TypeScript",
+        "description": "Modular architecture split into a TypeScript SDK (key management via Veramo, credential issuance, PDA signing) and a Rust Anchor crate. Prevents signature replay attacks and standardizes on-chain PDA permission checks across smart contracts."
+      },
+      "copy_trading_engine": {
+        "title": "Low-Latency Asynchronous Copy Trading Engine",
+        "category": "High-Frequency Trading / Rust",
+        "description": "Real-time copy trading engine engineered in Rust for the Solana network. Employs async concurrency, strict blockhash lifecycle tracking, and optimized transaction routing to mirror target wallet executions with sub-second finality."
+      },
+      "ai_agent_sandbox": {
+        "title": "Deterministic Security Sandbox for Autonomous LLM Agents",
+        "category": "Security / Rust & MCP",
+        "description": "Deterministic memory-safe proxy written in Rust to isolate autonomous AI operations over Model Context Protocol (MCP). Intercepts agent intent, verifies execution against Zero Trust policies, runs approved actions in headless browsers, and returns sanitized DOMs."
+      },
+      "flash_loan_arbitrage": {
+        "title": "Atomic On-Chain Flash Loan Arbitrage Engine",
+        "category": "DeFi / Solana Anchor",
+        "description": "Production-grade Solana smart contract executing atomic triangular arbitrage across MarginFi V2, Raydium AMM V4, and Orca Whirlpool within a single slot. Borrows capital, swaps across venues, verifies profitability, and repays liquidity atomically."
+      },
+      "enterprise_scheduling": {
+        "title": "Secure Commerce Scheduling & Financial Architecture",
+        "category": "Full-Stack / Go, TypeScript & PostgreSQL",
+        "description": "High-throughput business automation systems built for clinics, grooming studios, and commercial establishments. Features a concurrent Go backend backed by PostgreSQL, real-time ledger accounting, and an intuitive TypeScript client interface."
+      }
+    },
+    "current_work_label": "CURRENTLY IN PROGRESS",
+    "personal_title": "PROPRIETARY PROTOCOLS & HACKATHONS",
+    "personal_subtitle": "Decentralized protocols, RWA architectures, consumer applications, and high-performance analytics.",
+    "personal_items": {
+      "rwa_autoparts": {
+        "title": "RWA Digital Passport & Physical Auto Parts Authentication",
+        "category": "RWA / Hardware Security / Solana",
+        "description": "Physical auto parts verification pairing an unclonable cryptographic microchip to a Solana digital passport. Creates a dual identity: uncopiable physical proof paired with an immutable on-chain ledger tracking provenance, custody, and resale transparently."
+      },
+      "strata_protocol": {
+        "title": "STRATA Protocol — Structured Tranches (FIDC) On-Chain",
+        "category": "DeFi / Structured Finance / Anchor",
+        "description": "Solana-native structured yield vault executing Brazilian FIDC waterfall logic via immutable Anchor smart contracts. Deterministically routes 90% to Senior Tranche (capital preservation) and 10% to Junior Tranche (first-loss buffer & excess yield) with no centralized intervention."
+      },
+      "federated_medical_ai": {
+        "title": "Trustless Coordination for Federated Medical AI",
+        "category": "Healthcare AI / Privacy / Solana",
+        "description": "Hospitals collectively train shared diagnostic models without sharing raw patient records. On-chain validation, confidential metric aggregation, and automatic slashing of malicious actors."
+      },
+      "academic_reputation": {
+        "title": "Soulbound Academic Reputation (SPL Token-2022)",
+        "category": "Identity / Token-2022 / Solana",
+        "description": "Decentralized academic reputation using Token-2022 Non-Transferable extensions. Soulbound points permanently tied to student identity with burn mechanisms upon redemption."
+      },
+      "octopus_crowd": {
+        "title": "Octopus Crowd — Real-Time Sports Prediction Engine",
+        "category": "Consumer dApp / Oracle / Solana",
+        "description": "Real-time World Cup prediction dApp powered by TxLINE decentralized data feeds and Solana. High-frequency micro-challenges during matches backed by cryptographic verifiability."
+      },
+      "smartflow": {
+        "title": "SmartFlow — Automated Smart Money Discovery",
+        "category": "On-Chain Analytics / Birdeye API",
+        "description": "Automated engine analyzing on-chain data to identify, score, and alert on top-performing wallets before tokens hit trending radars, integrated with Birdeye APIs."
+      },
+      "kirapay_invoicing": {
+        "title": "Cross-Chain Invoicing & Anchor Settlement Rail",
+        "category": "Payments / Solana & Base",
+        "description": "Freelancer invoicing platform connecting Phantom wallets. Accepts cross-chain payments settled into USDC on Base via Kirapay with state settlement confirmed by Anchor on Solana."
+      },
+      "common": {
+    "nav": {
+      "home": "HOME",
+      "services": "SERVICES",
+      "projects": "PROJECTS",
+      "about": "ABOUT",
+      "cta": "TALK TO ME [›]",
+      "directory": "DIRECTORY",
+      "operations": "OPERATIONS",
+      "direct_contact": "DIRECT CONTACT",
+      "close": "Close Menu",
+      "open": "Open Menu"
+    },
+    "footer": {
+      "tagline": "[ WEB3 INFRASTRUCTURE & HFT ]",
+      "location": "Brazil, BR // EST. 2024",
+      "description": "Systems in Rust, Solana, Go and high-fidelity smart contracts.",
+      "rights": "© 2026 ZANVEXIS // ALL RIGHTS RESERVED",
+      "about": "About",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "col_zanvexis": "// Zanvexis Prod",
+      "col_proprietary": "// Proprietary & RWA",
+      "col_network": "// Terminal & Network"
+    }
+  }
+    }
+  }
+}
