@@ -31,7 +31,7 @@ export function LocaleSwitcher() {
       >
         PT
       </button>
-      <div className="w-[2px] bg-black" />
+      <div className="w-0.5 bg-black" />
       <button
         type="button"
         disabled={isPending}
