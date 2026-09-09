@@ -128,7 +128,7 @@ export default function Footer() {
 
             {/* Email */}
             <a 
-              href="mailto:zanvexistech@gmail.com" 
+              href="mailto:vns.pontual77@gmail.com" 
               className="w-11 h-11 border-2 border-white bg-black !text-white flex items-center justify-center hover:bg-white hover:!text-black transition-all cursor-pointer group"
             >
               <svg viewBox="0 0 24 24" className="w-5 h-5 fill-white group-hover:fill-black transition-colors">
@@ -181,10 +181,10 @@ export default function Footer() {
           </Link>
 
           <Link
-            href="/termos"
+            href="/faq"
             className="font-mono !text-neutral-300 text-xs md:text-sm uppercase font-bold underline-offset-4 hover:underline hover:!text-white"
           >
-            Termos
+            FAQ
           </Link>
         </div>
       </div>

@@ -256,15 +256,15 @@ export default function Navbar() {
                 <li><Link href="/sobre" onClick={() => setIsMenuOpen(false)} className="text-neutral-300! hover:text-white! block">ABOUT</Link></li>
                 <li><Link href="/contato" onClick={() => setIsMenuOpen(false)} className="text-neutral-300! hover:text-white! block">CONTACT</Link></li>
                 <li><Link href="/privacidade" onClick={() => setIsMenuOpen(false)} className="text-neutral-300! hover:text-white! block">PRIVACY</Link></li>
-                <li><Link href="/termos" onClick={() => setIsMenuOpen(false)} className="text-neutral-300! hover:text-white! block">TERMS</Link></li>
+                <li><Link href="/faq" onClick={() => setIsMenuOpen(false)} className="text-neutral-300! hover:text-white! block">FAQ</Link></li>
               </ul>
             </div>
 
             <div className="flex flex-col gap-6 font-mono">
               <div className="flex flex-col gap-1">
                 <span className="font-black text-white! text-sm uppercase">[ DIRECT CONTACT ]</span>
-                <a href="mailto:zanvexistech@gmail.com" className="text-neutral-300! hover:text-white! text-sm font-bold underline">
-                  zanvexistech@gmail.com
+                <a href="mailto:vns.pontual77@gmail.com" className="text-neutral-300! hover:text-white! text-sm font-bold underline">
+                  vns.pontual77@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-3 pt-2">
