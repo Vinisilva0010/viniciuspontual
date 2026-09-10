@@ -27,6 +27,7 @@
     "title": "PROJETOS & ARQUITETURAS EM PRODUÇÃO",
     "subtitle": "Desde janeiro de 2024, atuo através da Zanvexis desenvolvendo infraestrutura de alta performance sob demanda e iniciativas proprietárias.",
     "view_case": "Ler estudo de caso completo →",
+    "view_demo": "Ver demonstração →",
     "items": {
       "ssi_identity": {
         "title": "Camada de Identidade Verificável (SSI) & Provas de Confiança",

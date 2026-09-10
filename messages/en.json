@@ -27,6 +27,8 @@
     "title": "PROJECTS & PRODUCTION ARCHITECTURES",
     "subtitle": "Since January 2024, operating through Zanvexis to engineer high-throughput infrastructure and mission-critical systems for clients.",
     "view_case": "Read full case study →",
+    
+    "view_demo": "View demo →",
     "items": {
       "ssi_identity": {
         "title": "Verifiable Identity Layer (SSI) & Trust Proofs",

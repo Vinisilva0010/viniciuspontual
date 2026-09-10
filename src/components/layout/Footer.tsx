@@ -186,6 +186,12 @@ export default function Footer() {
           >
             FAQ
           </Link>
+          <Link
+            href="/teste"
+            className="font-mono !text-neutral-300 text-xs md:text-sm uppercase font-bold underline-offset-4 hover:underline hover:!text-white"
+          >
+            Teste
+          </Link>
         </div>
       </div>
     </footer>

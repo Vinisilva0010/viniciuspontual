@@ -204,6 +204,15 @@ export default function HomePage() {
                   className="inline-block text-base font-black text-black uppercase underline decoration-2 hover:opacity-80"
                 >
                   {tProjects("view_case")}
+                  
+                </Link>
+
+                <Link
+                  href="/projetos/autenticacao-rwa-autopecas-demo"
+                  className="inline-block text-base font-black text-black uppercase underline decoration-2 hover:opacity-80"
+                >
+                  {tProjects("view_demo")}
+                  
                 </Link>
               </div>
             </div>
