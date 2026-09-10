@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zanvexis.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://viniciuspontual.zanvexis.com";
 
   // Crawlers e Agentes de Treinamento/Busca das principais IAs
   const aiUserAgents = [

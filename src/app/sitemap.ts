@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://zanvexis.com";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://viniciuspontual.zanvexis.com";
   const lastModified = new Date("2026-09-09T00:00:00.000Z");
 
   const locales = ["en", "pt"];
