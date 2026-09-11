@@ -127,5 +127,26 @@
     }
   }
     }
+  },
+  "aiKnowledge": {
+    "sectionTitle": "Conhecimento de IA",
+    "exploreButton": "Explorar",
+    "cards": {
+      "infra": {
+        "code": "[ 01 // RUNTIME ]",
+        "title": "Infraestrutura",
+        "description": "Sandboxes determinísticas, pipelines de baixa latência e ambientes isolados para cargas de IA."
+      },
+      "arch": {
+        "code": "[ 02 // ARCH ]",
+        "title": "Arquitetura de Agentes",
+        "description": "Tool calling via MCP, validação estrita em Serde, guardrails de segurança e máquinas de estados."
+      },
+      "agents": {
+        "code": "[ 03 // AGENTS ]",
+        "title": "Agentes",
+        "description": "Enxames autônomos, orquestração de navegadores headless, interação com smart contracts e loops de decisão."
+      }
+    }
   }
 }

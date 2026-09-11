@@ -1,6 +1,8 @@
+import { AIKnowledgeSection } from "@/components/AIKnowledgeSection";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
+
 
 export default function HomePage() {
   const tAbout = useTranslations("about");
@@ -154,6 +156,11 @@ export default function HomePage() {
       </section>
 
 
+
+ <AIKnowledgeSection />
+
+
+
 {/* Projetos Proprietários: Projeto Atual no Topo + Grid 3x3 */}
       <section className="space-y-10 pb-20 border-t-4 border-black pt-10 w-full">
         <div className="space-y-2">
@@ -214,6 +221,7 @@ export default function HomePage() {
                   {tProjects("view_demo")}
                   
                 </Link>
+                
               </div>
             </div>
           </div>
