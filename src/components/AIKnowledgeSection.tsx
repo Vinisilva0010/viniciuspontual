@@ -1,13 +1,15 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { useTranslations } from "next-intl";
+import Link from "next/link";
+import { useTranslations, useLocale } from "next-intl";
 
 interface SingleLiquidCardProps {
   code: string;
   title: string;
   description: string;
   buttonText: string;
+  href: string;
 }
 
 function OptimizedLiquidCard({
@@ -15,6 +17,7 @@ function OptimizedLiquidCard({
   title,
   description,
   buttonText,
+  href,
 }: SingleLiquidCardProps) {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
@@ -25,7 +28,6 @@ function OptimizedLiquidCard({
     const rawCtx = canvas.getContext("2d");
     if (!rawCtx) return;
 
-    // Fix definitivo do TypeScript: captura do contexto em constante tipada
     const ctx: CanvasRenderingContext2D = rawCtx;
 
     const W = 360;
@@ -198,8 +200,8 @@ function OptimizedLiquidCard({
           </p>
         </div>
 
-        <button
-          type="button"
+        <Link
+          href={href}
           style={{
             alignSelf: "flex-start",
             padding: "8px 14px",
@@ -211,12 +213,14 @@ function OptimizedLiquidCard({
             fontSize: "12px",
             letterSpacing: "0.04em",
             textTransform: "uppercase",
+            textDecoration: "none",
             cursor: "pointer",
             pointerEvents: "auto",
+            display: "inline-block",
           }}
         >
           {buttonText} [›]
-        </button>
+        </Link>
       </div>
     </div>
   );
@@ -224,6 +228,28 @@ function OptimizedLiquidCard({
 
 export function AIKnowledgeSection() {
   const t = useTranslations("aiKnowledge");
+  const locale = useLocale();
+
+  const cards = [
+    {
+      code: t("cards.infra.code"),
+      title: t("cards.infra.title"),
+      description: t("cards.infra.description"),
+      href: `/${locale}/projetos/agentes-ia`,
+    },
+    {
+      code: t("cards.arch.code"),
+      title: t("cards.arch.title"),
+      description: t("cards.arch.description"),
+      href: `/${locale}/projetos/agentes-ia/como-usar`,
+    },
+    {
+      code: t("cards.agents.code"),
+      title: t("cards.agents.title"),
+      description: t("cards.agents.description"),
+      href: `/${locale}/projetos/agentes-ia/agentes-uteis`,
+    },
+  ];
 
   return (
     <section className="w-full py-16 border-b-2 border-black/10">
@@ -232,24 +258,16 @@ export function AIKnowledgeSection() {
           {t("sectionTitle")}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
-          <OptimizedLiquidCard
-            code={t("cards.infra.code")}
-            title={t("cards.infra.title")}
-            description={t("cards.infra.description")}
-            buttonText={t("exploreButton")}
-          />
-          <OptimizedLiquidCard
-            code={t("cards.arch.code")}
-            title={t("cards.arch.title")}
-            description={t("cards.arch.description")}
-            buttonText={t("exploreButton")}
-          />
-          <OptimizedLiquidCard
-            code={t("cards.agents.code")}
-            title={t("cards.agents.title")}
-            description={t("cards.agents.description")}
-            buttonText={t("exploreButton")}
-          />
+          {cards.map((card) => (
+            <OptimizedLiquidCard
+              key={card.code}
+              code={card.code}
+              title={card.title}
+              description={card.description}
+              buttonText={t("exploreButton")}
+              href={card.href}
+            />
+          ))}
         </div>
       </div>
     </section>
