@@ -135,17 +135,17 @@
       "infra": {
         "code": "[ 01 // RUNTIME ]",
         "title": "Infraestrutura",
-        "description": "Sandboxes determinísticas, pipelines de baixa latência e ambientes isolados para cargas de IA."
+        "description": "Como eu organizo a estrutura de agentes de IA: segurança, custos e praticidade."
       },
       "arch": {
         "code": "[ 02 // ARCH ]",
-        "title": "Arquitetura de Agentes",
-        "description": "Tool calling via MCP, validação estrita em Serde, guardrails de segurança e máquinas de estados."
+        "title": "Orquestração de Agentes",
+        "description": "Controle simplificado de múltiplos agentes em execução simultânea ou operações pontuais."
       },
       "agents": {
         "code": "[ 03 // AGENTS ]",
         "title": "Agentes",
-        "description": "Enxames autônomos, orquestração de navegadores headless, interação com smart contracts e loops de decisão."
+        "description": "Agentes realmente úteis para o fluxo de trabalho de desenvolvedores e empresas."
       }
     }
   }

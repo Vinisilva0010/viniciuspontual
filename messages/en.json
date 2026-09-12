@@ -138,17 +138,17 @@
       "infra": {
         "code": "[ 01 // RUNTIME ]",
         "title": "Infrastructure",
-        "description": "Deterministic sandboxes, low-latency execution pipelines, and isolated runtime environments for AI workloads."
+        "description": "How I organize AI agent infrastructure: security, costs, and practicality."
       },
       "arch": {
         "code": "[ 02 // ARCH ]",
-        "title": "Agent Architecture",
-        "description": "MCP protocol tool calling, strict Serde type validation, declarative security guardrails, and deterministic states."
+        "title": "Agent Orchestration",
+        "description": "Streamlined control for scaling multiple running agents or handling focused, lightweight tasks."
       },
       "agents": {
         "code": "[ 03 // AGENTS ]",
         "title": "Agents",
-        "description": "Autonomous swarms, headless browser orchestration, smart contract interaction, and automated reasoning loops."
+        "description": "High-impact agents engineered specifically for developers and enterprise operations."
       }
     }
   }
