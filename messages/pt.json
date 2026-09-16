@@ -69,6 +69,11 @@
         "category": "RWA / Hardware Security / Solana",
         "description": "Sistema de autenticação física de autopeças combinando chip criptográfico inclonável em cada peça com passaporte digital na Solana. Cria uma identidade dupla: prova física impossível de clonar e histórico completo on-chain com fabricante, custódia e revenda pública verificável."
       },
+          "parity": {
+        "title": "Parity — Verificação de Ações Tokenizadas na Solana",
+        "category": "Ações Tokenizadas / Token-2022 / Solana",
+        "description": "A mesma ação americana é negociada na Solana como vários tokens de emissores diferentes, e eles não oferecem o mesmo risco. O Parity recebe um ticker e responde antes de você gastar qualquer coisa: se o token vem de um emissor verificado ou de um impostor, quanto custa de verdade entrar com ordens de US$ 1 mil, 10 mil ou 100 mil usando cotações ao vivo do Jupiter, e quais poderes Token-2022 o emissor manteve sobre o seu saldo. Nas medições na mainnet, 30 dos 32 tokens monitorados podem ser congelados pelo emissor e 13 não tinham nenhuma rota de negociação."
+      },
       "strata_protocol": {
         "title": "Protocolo STRATA — Tranches Estruturadas (FIDC) On-Chain",
         "category": "DeFi / Structured Finance / Anchor",

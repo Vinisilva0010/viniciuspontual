@@ -71,6 +71,12 @@
         "category": "RWA / Hardware Security / Solana",
         "description": "Physical auto parts verification pairing an unclonable cryptographic microchip to a Solana digital passport. Creates a dual identity: uncopiable physical proof paired with an immutable on-chain ledger tracking provenance, custody, and resale transparently."
       },
+            "parity": {
+        "title": "Parity — Tokenized Stock Verification on Solana",
+        "category": "Tokenized Equities / Token-2022 / Solana",
+        "description": "The same US stock trades on Solana as several tokens from different issuers, and they are not equally safe to hold. Parity takes a ticker and answers before you spend anything: whether the token comes from a verified issuer or an impostor, what a real $1K, $10K or $100K order costs to enter using live Jupiter quotes, and which Token-2022 powers the issuer kept over your balance. In mainnet measurements, 30 of 32 tracked tokens can be frozen by the issuer and 13 had no tradable route at all."
+      },
+      
       "strata_protocol": {
         "title": "STRATA Protocol — Structured Tranches (FIDC) On-Chain",
         "category": "DeFi / Structured Finance / Anchor",

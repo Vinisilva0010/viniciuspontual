@@ -227,6 +227,68 @@ export default function HomePage() {
           </div>
         </article>
 
+
+
+
+              {/* PARITY */}
+        <article className="border-4 border-black p-5 sm:p-8 space-y-6">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-black border-2 border-black px-2.5 py-0.5">
+              {tProjects("current_work_label")}
+            </span>
+            <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-black opacity-80">
+              // {tProjects("personal_items.parity.category")}
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-center">
+            <div className="w-full aspect-video border-4 border-black bg-neutral-100 relative overflow-hidden order-first lg:order-last">
+              <Image
+                src="/projects/pari.jpg"
+                alt={tProjects("personal_items.parity.title")}
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+
+            <div className="space-y-4">
+              <h3 className="text-2xl sm:text-4xl font-black text-black leading-tight">
+                {tProjects("personal_items.parity.title")}
+              </h3>
+
+              <p className="text-base sm:text-lg font-semibold text-black leading-relaxed">
+                {tProjects("personal_items.parity.description")}
+              </p>
+
+              <div>
+                <Link
+                  href="https://github.com/Vinisilva0010/parity"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-base font-black text-black uppercase underline decoration-2 hover:opacity-80"
+                >
+                  {tProjects("view_case")}
+                </Link>
+
+                <Link
+                  href="https://parity.zanvexis.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block text-base font-black text-black uppercase underline decoration-2 hover:opacity-80"
+                >
+                  {tProjects("view_demo")}
+                </Link>
+              </div>
+            </div>
+          </div>
+        </article>
+      
+
+
+
+
+
         {/* DEMAIS 6 PROJETOS EM GRID / CARROSSEL NO MOBILE */}
         <div className="flex overflow-x-auto pb-6 pt-2 snap-x snap-mandatory -mx-6 px-6 gap-4 sm:mx-0 sm:px-0 sm:gap-0 sm:grid sm:grid-cols-3 sm:overflow-visible sm:pb-0">
           {[
