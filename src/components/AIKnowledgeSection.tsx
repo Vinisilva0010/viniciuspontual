@@ -256,7 +256,7 @@ export function AIKnowledgeSection() {
     {
       key: "review_harness",
       slug: "review-harness",
-      githubUrl: "https://github.com/seu-usuario/review-harness",
+      githubUrl: "https://github.com/Vinisilva0010/review-harness.git",
       category: isEn ? "Agente Autônomo" : "Agente Autônomo",
       title: "review-harness",
       description: isEn
