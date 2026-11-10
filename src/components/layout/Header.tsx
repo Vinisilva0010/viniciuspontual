@@ -54,6 +54,16 @@ export default function Navbar() {
     { name: "Plataforma Agendamento Go", href: "/projetos/plataforma-agendamento-financeiro-go" },
   ];
 
+  const aiLinks = [
+    { name: "review-harness (PR Security)", href: "/projetos/review-harness" },
+    { name: "trend-pullback (Trading Quant)", href: "/projetos/trend-pullback" },
+    { name: "Orquestração de Agentes", href: "/projetos/orquestracao-agentes" },
+    { name: "Muse Spark H200 (Meta Challenge)", href: "/projetos/muse-kernel-challenge" },
+    { name: "LaunchProof (Pump.fun Anti-Bundle)", href: "/projetos/launchproof" },
+  ];
+
+  
+
   return (
     <>
       <nav className="fixed top-0 left-0 w-full bg-black border-b-4 border-white h-20 sm:h-24 flex items-center z-50">
@@ -110,6 +120,28 @@ export default function Navbar() {
                 ))}
               </div>
             </div>
+
+            {/* Dropdown IA / AI */}
+            <div className="relative group py-6">
+              <button className="flex items-center gap-2 font-mono text-sm lg:text-base font-black uppercase tracking-wider text-white!">
+                IA <span className="text-xs">▼</span>
+              </button>
+              <div className="absolute top-full left-0 w-88 max-h-[70vh] overflow-y-auto bg-black border-4 border-white shadow-[6px_6px_0px_#ffffff] p-4 flex flex-col gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                {aiLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="font-mono text-xs font-black text-white! hover:text-black! hover:bg-white p-2 border-b border-neutral-800 last:border-none uppercase transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+
+
+            
 
             <Link href="/sobre" className="font-mono text-sm lg:text-base font-black uppercase tracking-wider text-white!">
               ABOUT
@@ -241,6 +273,26 @@ export default function Navbar() {
                 {projectsLinks.map((item) => (
                   <li key={item.href}>
                     <Link href={item.href} onClick={() => setIsMenuOpen(false)} className="text-neutral-300! hover:text-white! block">
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Coluna IA na Cortina */}
+            <div className="flex flex-col gap-4">
+              <h3 className="font-mono text-xl uppercase font-black text-white! border-b-2 border-white/40 pb-2">
+                // IA
+              </h3>
+              <ul className="flex flex-col gap-2.5 font-mono text-sm font-bold max-h-[50vh] overflow-y-auto pr-2">
+                {aiLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-neutral-300! hover:text-white! block uppercase"
+                    >
                       {item.name}
                     </Link>
                   </li>

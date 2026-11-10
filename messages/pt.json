@@ -109,6 +109,7 @@
       "home": "HOME",
       "services": "SERVIÇOS",
       "projects": "PROJETOS",
+      "aiDropdown": "IA",
       "about": "SOBRE",
       "cta": "FALE COMIGO [›]",
       "directory": "DIRETÓRIO",
@@ -128,29 +129,52 @@
       "terms": "Termos",
       "col_zanvexis": "// Zanvexis Prod",
       "col_proprietary": "// Proprietary & RWA",
+      "col_ai": "// IA & Sistemas Autônomos",
       "col_network": "// Terminal & Network"
     }
   }
     }
   },
  "aiKnowledge": {
-    "sectionTitle": "Conhecimento de IA",
+    "sectionTitle": "Conhecimento em IA",
     "exploreButton": "Explorar",
     "cards": {
       "infra": {
         "code": "[ 01 // RUNTIME ]",
         "title": "Infraestrutura",
-        "description": "Como eu organizo a estrutura de agentes de IA: segurança, custos e praticidade."
+        "description": "Como organizo a infraestrutura de agentes de IA: segurança, custos e praticidade."
       },
       "arch": {
         "code": "[ 02 // ARCH ]",
         "title": "Orquestração de Agentes",
-        "description": "Controle simplificado de múltiplos agentes em execução simultânea ou operações pontuais."
+        "description": "Controle simplificado para escalar múltiplos agentes em execução ou lidar com tarefas focadas e leves."
       },
       "agents": {
         "code": "[ 03 // AGENTS ]",
         "title": "Agentes",
-        "description": "Agentes realmente úteis para o fluxo de trabalho de desenvolvedores e empresas."
+        "description": "Agentes de alto impacto projetados especificamente para desenvolvedores e operações corporativas."
+      }
+    },
+    "projectsCarouselTitle": "Projetos em Destaque",
+    "viewCase": "Ler Artigo Completo",
+    "githubAriaLabel": "Ver repositório no GitHub",
+    "items": {
+      "review_harness": {
+        "title": "review-harness",
+        "category": "Agente Autônomo",
+        "badge": "CLI / Engine",
+        "description": "Agentes de IA para programação escrevem mais código do que uma pessoa consegue ler linha por linha. Ler tudo não é escalável. Não ler nada é inseguro. Essa ferramenta verifica automaticamente todas as solicitações de pull request, para que você possa se concentrar apenas nas solicitações que realmente precisam dela."
+      },
+
+      "trend_pullback": {
+        "title": "trend-pullback",
+        "category": "Trading Quantitativo",
+        "description": "Ferramenta de pesquisa quantitativa e alertas de trading. Cada setup é testado em anos de histórico antes de emitir qualquer sinal, exigindo lucro em múltiplos períodos e superando a baseline de mercado. Sem chaves de exchange: 100% focado em validação e paper trading."
+      },
+      "agent_orchestration": {
+        "title": "Orquestração de Agentes",
+        "category": "Sistemas Autônomos",
+        "description": "Espaço de trabalho auto-hospedado para colaboração entre humanos e agentes de IA com governança estrita: aprovação humana para ações irreversíveis, pré-reserva de custo de tokens e log de auditoria imutável encadeado por hash. Fases 1 a 4 ativas."
       }
     }
   }

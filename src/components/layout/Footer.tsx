@@ -21,6 +21,14 @@ export default function Footer() {
     { title: "Kirapay Invoicing Anchor", slug: "faturamento-kirapay-anchor-solana" },
   ];
 
+  const aiProjects = [
+    { title: "review-harness (PR Security)", slug: "review-harness" },
+    { title: "trend-pullback (Trading Quant)", slug: "trend-pullback" },
+    { title: "Orquestração de Agentes", slug: "orquestracao-agentes" },
+    { title: "Muse Spark H200 (Meta)", slug: "muse-kernel-challenge" },
+    { title: "LaunchProof (Pump.fun Guard)", slug: "launchproof" },
+  ];
+
   return (
     <footer className="w-full bg-black border-t-8 border-black pt-16 pb-12 px-4 md:px-12 z-20 relative overflow-hidden mt-20">
       
@@ -72,6 +80,25 @@ export default function Footer() {
           </span>
           <ul className="space-y-1.5 pt-1">
             {proprietaryProjects.map((p) => (
+              <li key={p.slug}>
+                <Link
+                  href={`/projetos/${p.slug}`}
+                  className="font-mono !text-neutral-300 text-xs uppercase font-bold hover:!text-white hover:underline"
+                >
+                  {p.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* Links: Projetos IA & Agentes */}
+        <div className="flex flex-col space-y-2">
+          <span className="font-mono !text-white text-xs uppercase tracking-widest font-black border-b-2 border-neutral-700 pb-1">
+            // IA &amp; Sistemas Autônomos
+          </span>
+          <ul className="space-y-1.5 pt-1">
+            {aiProjects.map((p) => (
               <li key={p.slug}>
                 <Link
                   href={`/projetos/${p.slug}`}

@@ -112,6 +112,7 @@
       "home": "HOME",
       "services": "SERVICES",
       "projects": "PROJECTS",
+      "aiDropdown": "AI",
       "about": "ABOUT",
       "cta": "TALK TO ME [›]",
       "directory": "DIRECTORY",
@@ -131,6 +132,7 @@
       "terms": "Terms",
       "col_zanvexis": "// Zanvexis Prod",
       "col_proprietary": "// Proprietary & RWA",
+      "col_ai": "// AI & Autonomous Systems",
       "col_network": "// Terminal & Network"
     }
   }
@@ -156,7 +158,31 @@
         "title": "Agents",
         "description": "High-impact agents engineered specifically for developers and enterprise operations."
       }
+    },
+    "projectsCarouselTitle": "Featured Projects",
+    "viewCase": "Read Full Article",
+    "githubAriaLabel": "View repository on GitHub",
+    "items": {
+      "review_harness": {
+        "title": "review-harness",
+        "category": "Autonomous Agent",
+        "badge": "CLI / Engine",
+        "description": "Coding AI agents write more code than any human can read line by line. Reading everything isn't scalable. Reading nothing is unsafe. This tool automatically audits every pull request so you only focus on code that actually requires human review."
+      },
+
+      "trend_pullback": {
+        "title": "trend-pullback",
+        "category": "Quantitative Trading",
+        "description": "A quantitative trading research and alert tool. Every setup is backtested on years of historical data before dispatching an alert, ensuring proven edge against baseline entries. Zero live exchange keys: strictly engineered for backtesting and paper trading."
+      },
+      "agent_orchestration": {
+        "title": "Agent Orchestrator",
+        "category": "Autonomous Systems",
+        "description": "A self-hosted workspace for human-agent collaboration with strict governance: mandatory human approval for irreversible actions, upfront token budget reservation, and an immutable hash-chained audit log. Phases 1-4 active."
+      }
     }
   }
+
+  
 }
 
