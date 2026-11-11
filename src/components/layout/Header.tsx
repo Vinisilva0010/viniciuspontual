@@ -3,9 +3,11 @@
 import { useState, useEffect } from "react";
 import { Link, usePathname, useRouter } from "@/i18n/routing";
 import { useLocale, useTranslations } from "next-intl";
+import { systemDesignEntries } from "@/components/SystemDesignSection";
 
 export default function Navbar() {
-  const tNav = useTranslations("common.nav");  
+  const tNav = useTranslations("common.nav");
+  const tSystemDesign = useTranslations("systemDesign");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
@@ -62,6 +64,11 @@ export default function Navbar() {
     { name: "LaunchProof (Pump.fun Anti-Bundle)", href: "/projetos/launchproof" },
   ];
 
+  const systemDesignLinks = systemDesignEntries.map((entry) => ({
+    name: tSystemDesign(`items.${entry.key}.name`),
+    href: entry.href,
+  }));
+
   
 
   return (
@@ -75,7 +82,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-6 lg:gap-8">
+          <div className="hidden lg:flex items-center gap-6 lg:gap-8">
             <Link
               href="/"
               className={`font-mono text-sm lg:text-base font-black uppercase tracking-wider ${
@@ -139,9 +146,25 @@ export default function Navbar() {
               </div>
             </div>
 
+            {/* Dropdown System design */}
+            <div className="relative group py-6">
+              <button className="flex items-center gap-2 font-mono text-sm lg:text-base font-black uppercase tracking-wider text-white!">
+                {tSystemDesign("nav_label")} <span className="text-xs">▼</span>
+              </button>
+              <div className="absolute top-full left-0 w-88 max-h-[70vh] overflow-y-auto bg-black border-4 border-white shadow-[6px_6px_0px_#ffffff] p-4 flex flex-col gap-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                {systemDesignLinks.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="font-mono text-xs font-black text-white! hover:text-black! hover:bg-white p-2 border-b border-neutral-800 last:border-none uppercase transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
 
 
-            
 
             <Link href="/sobre" className="font-mono text-sm lg:text-base font-black uppercase tracking-wider text-white!">
               ABOUT
@@ -193,7 +216,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Controls */}
-          <div className="flex md:hidden items-center gap-3">
+          <div className="flex lg:hidden items-center gap-3">
             {/* Seletor Duplo PT / EN Mobile */}
             <div className="flex items-center border-2 border-white font-mono text-xs font-black">
               <button
@@ -287,6 +310,26 @@ export default function Navbar() {
               </h3>
               <ul className="flex flex-col gap-2.5 font-mono text-sm font-bold max-h-[50vh] overflow-y-auto pr-2">
                 {aiLinks.map((item) => (
+                  <li key={item.href}>
+                    <Link
+                      href={item.href}
+                      onClick={() => setIsMenuOpen(false)}
+                      className="text-neutral-300! hover:text-white! block uppercase"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Coluna System design na Cortina */}
+            <div className="flex flex-col gap-4">
+              <h3 className="font-mono text-xl uppercase font-black text-white! border-b-2 border-white/40 pb-2">
+                {`// ${tSystemDesign("nav_label")}`}
+              </h3>
+              <ul className="flex flex-col gap-2.5 font-mono text-sm font-bold max-h-[50vh] overflow-y-auto pr-2">
+                {systemDesignLinks.map((item) => (
                   <li key={item.href}>
                     <Link
                       href={item.href}

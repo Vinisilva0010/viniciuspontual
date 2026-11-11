@@ -9,6 +9,7 @@ import Footer from "@/components/layout/Footer";
 import "../globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://viniciuspontual.zanvexis.com"),
   title: "Vinicius Silva | Software Engineer",
   description: "Engenharia de software focada em sistemas de alta performance, blockchain e arquiteturas seguras.",
 };

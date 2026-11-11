@@ -15,8 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   const projectSlugs = [
-    "sinapse-protocolo-ia-medica-solana",
-    "campus-points-reputacao-academica",
     "octopus-crowd-previsoes-esportivas",
     "smartflow-radar-smart-money-solana",
     "faturamento-kirapay-anchor-solana",
@@ -29,6 +27,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "plataforma-agendamento-financeiro-go",
     "protocolo-strata-tranches-solana",
     "agentes-ia",
+    "launchproof",
+    "muse-kernel-challenge",
+    "review-harness",
+    "trend-pullback",
+    "orquestracao-agentes",
+    "autenticacao-rwa-autopecas-demo",
+    "parity/arquitetura",
+    "orquestracao-agentes/arquitetura",
+    "veymark/arquitetura",
+    "trend-pullback/arquitetura",
+    "review-harness/arquitetura",
   ];
 
   const agentesIaSubpages = ["como-usar", "agentes-uteis"];

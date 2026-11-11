@@ -1,7 +1,11 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import { systemDesignEntries } from "@/components/SystemDesignSection";
 export default function Footer() {
   const tFooter = useTranslations("common.footer");
+  const tSystemDesign = useTranslations("systemDesign");
+  // "common" está aninhado dentro de projects.personal_items nos arquivos de mensagem (fase 3 vai mover).
+  const tFooterRights = useTranslations("projects.personal_items.common.footer");
   const zanvexisProjects = [
     { title: "Identidade SSI Solana", slug: "camada-identidade-ssi-solana" },
     { title: "Solana Access Control SDK", slug: "solana-access-control-sdk" },
@@ -111,6 +115,25 @@ export default function Footer() {
           </ul>
         </div>
 
+        {/* Links: System design */}
+        <div className="flex flex-col space-y-2">
+          <span className="font-mono !text-white text-xs uppercase tracking-widest font-black border-b-2 border-neutral-700 pb-1">
+            {tSystemDesign("footer_label")}
+          </span>
+          <ul className="space-y-1.5 pt-1">
+            {systemDesignEntries.map((entry) => (
+              <li key={entry.href}>
+                <Link
+                  href={entry.href}
+                  className="font-mono !text-neutral-300 text-xs uppercase font-bold hover:!text-white hover:underline"
+                >
+                  {tSystemDesign(`items.${entry.key}.name`)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
         {/* Redes Sociais */}
         <div className="flex flex-col space-y-3">
           <span className="font-mono !text-white text-xs uppercase tracking-widest font-black border-b-2 border-neutral-700 pb-1">
@@ -182,7 +205,7 @@ export default function Footer() {
       {/* Copyright e Links Institucionais */}
       <div className="max-w-7xl mx-auto pt-8 border-t-2 border-neutral-800 flex flex-wrap justify-between items-center gap-4">
         <p className="font-mono !text-neutral-400 text-xs md:text-sm uppercase font-bold">
-          © 2024 ZANVEXIS // ALL RIGHTS RESERVED
+          {tFooterRights("rights")}
         </p>
 
         <div className="flex flex-wrap gap-4 md:gap-6">

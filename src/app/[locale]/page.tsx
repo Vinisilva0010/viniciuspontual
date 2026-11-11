@@ -1,4 +1,5 @@
 import { AIKnowledgeSection } from "@/components/AIKnowledgeSection";
+import { SystemDesignSection } from "@/components/SystemDesignSection";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
@@ -396,6 +397,9 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+
+      {/* System design */}
+      <SystemDesignSection />
 
       {/* Seção Esteiras de Interfaces / UI Marquee */}
       <section className="space-y-10 pb-20 border-t-4 border-black pt-10 w-full overflow-hidden">

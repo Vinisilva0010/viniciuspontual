@@ -177,5 +177,34 @@
         "description": "Espaço de trabalho auto-hospedado para colaboração entre humanos e agentes de IA com governança estrita: aprovação humana para ações irreversíveis, pré-reserva de custo de tokens e log de auditoria imutável encadeado por hash. Fases 1 a 4 ativas."
       }
     }
+  },
+  "systemDesign": {
+    "title": "System design de alguns projetos",
+    "intro": "Cada página explica o problema, o desenho do sistema, as decisões que eu tomei, o que eu descartei e o preço de cada escolha. Inclui o que ainda não está resolvido.",
+    "cta": "Ver arquitetura",
+    "nav_label": "SYSTEM DESIGN",
+    "footer_label": "// System design",
+    "items": {
+      "parity": {
+        "name": "Parity",
+        "description": "Verificação de ações tokenizadas na Solana. Git como banco de dados e zero chamada externa no caminho de leitura."
+      },
+      "agent_orchestration": {
+        "name": "Orquestração de agentes",
+        "description": "Orquestrador de agentes de IA em Rust. Sete ataques nomeados, custo reservado antes da chamada e auditoria feita pelo banco."
+      },
+      "veymark": {
+        "name": "Veymark",
+        "description": "Autenticação de produto físico com NFC e Solana. Três provas independentes e um terceiro estado: não deu para verificar."
+      },
+      "trend_pullback": {
+        "name": "trend-pullback",
+        "description": "Estudo e execução de um setup de trading. Vencer a base e não só dar lucro, e o mesmo código no estudo e ao vivo."
+      },
+      "review_harness": {
+        "name": "review-harness",
+        "description": "Revisão automática de pull request. Verificação grátis primeiro, e a IA nunca pode aprovar nada."
+      }
+    }
   }
 }

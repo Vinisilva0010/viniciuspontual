@@ -483,7 +483,7 @@ export default function AgentOrchestrationProjectPage() {
           {/* PROJETO 3: FLASH LOAN ARBITRAGE */}
           <article className="space-y-4">
             <Link 
-              href="/projetos/arbitragem-flash-loan-solana" 
+              href="/projetos/flash-loan-arbitragem-solana" 
               className="block w-full border-4 border-black group overflow-hidden"
             >
               <div 
@@ -501,7 +501,7 @@ export default function AgentOrchestrationProjectPage() {
                 DEFI // ANCHOR &amp; CPIS
               </span>
               <h4 className="text-xl font-black uppercase leading-tight text-black hover:underline">
-                <Link href="/projetos/arbitragem-flash-loan-solana">
+                <Link href="/projetos/flash-loan-arbitragem-solana">
                   Solana Flash Loan Arbitrage Engine
                 </Link>
               </h4>
@@ -509,7 +509,7 @@ export default function AgentOrchestrationProjectPage() {
 
             <div className="pt-2 border-t-2 border-neutral-200 flex justify-between items-center font-mono text-xs">
               <Link 
-                href="/projetos/arbitragem-flash-loan-solana" 
+                href="/projetos/flash-loan-arbitragem-solana" 
                 className="font-black uppercase underline hover:text-neutral-600"
               >
                 Read Specification ›

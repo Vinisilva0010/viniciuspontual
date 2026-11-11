@@ -181,6 +181,35 @@
         "description": "A self-hosted workspace for human-agent collaboration with strict governance: mandatory human approval for irreversible actions, upfront token budget reservation, and an immutable hash-chained audit log. Phases 1-4 active."
       }
     }
+  },
+  "systemDesign": {
+    "title": "System design of some projects",
+    "intro": "Each page explains the problem, the design, the decisions I made, what I rejected and the price of each choice. Including what is still unresolved.",
+    "cta": "View architecture",
+    "nav_label": "SYSTEM DESIGN",
+    "footer_label": "// System design",
+    "items": {
+      "parity": {
+        "name": "Parity",
+        "description": "Tokenized stock verification on Solana. Git as the database and zero external calls on the read path."
+      },
+      "agent_orchestration": {
+        "name": "Agent orchestration",
+        "description": "AI agent orchestrator in Rust. Seven named attacks, cost reserved before the call, and auditing done by the database."
+      },
+      "veymark": {
+        "name": "Veymark",
+        "description": "Physical product authentication with NFC and Solana. Three independent proofs and a third state: could not verify."
+      },
+      "trend_pullback": {
+        "name": "trend-pullback",
+        "description": "Trading setup study and execution. Beating the base rather than just turning a profit, and the same code in study and live."
+      },
+      "review_harness": {
+        "name": "review-harness",
+        "description": "Automatic pull request review. Free checks first, and the AI can never approve anything."
+      }
+    }
   }
 
   
