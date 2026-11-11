@@ -82,7 +82,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-6 lg:gap-8">
+          <div className="hidden xl:flex items-center gap-6 lg:gap-8">
             <Link
               href="/"
               className={`font-mono text-sm lg:text-base font-black uppercase tracking-wider ${
@@ -216,7 +216,7 @@ export default function Navbar() {
           </div>
 
           {/* Mobile Controls */}
-          <div className="flex lg:hidden items-center gap-3">
+          <div className="flex xl:hidden items-center gap-3">
             {/* Seletor Duplo PT / EN Mobile */}
             <div className="flex items-center border-2 border-white font-mono text-xs font-black">
               <button

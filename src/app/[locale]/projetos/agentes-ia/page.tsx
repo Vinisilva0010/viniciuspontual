@@ -12,8 +12,8 @@ export function generateMetadata({ params }: Props): Metadata {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, type: "article", images: ["/projects/ia.jpg"] },
-    twitter: { card: "summary_large_image", title, description, images: ["/projects/ia.jpg"] },
+    openGraph: { title, description, url, type: "article", images: ["/projects/agent-sandbox.png"] },
+    twitter: { card: "summary_large_image", title, description, images: ["/projects/agent-sandbox.png"] },
   };
 }
 
@@ -34,7 +34,7 @@ export default function AgentesIAPage() {
     description:
       "Multi-agent system design and delivery: architecture, human-in-the-loop control, per-tool least privilege, and near-zero infrastructure cost.",
     author: { "@type": "Person", name: "Vinicius Pontual" },
-    image: "https://viniciuspontual.zanvexis.com/projects/ia.jpg",
+    image: "https://viniciuspontual.zanvexis.com/projects/agent-sandbox.png",
   };
 
   return (

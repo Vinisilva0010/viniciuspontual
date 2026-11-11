@@ -44,7 +44,7 @@ export default function AgentOrchestrationProjectPage() {
     dateModified: "2026-11-09",
     programmingLanguage: "Rust, TypeScript, Python, SQL",
     runtimePlatform: "Rust 1.98+, PostgreSQL 16, Docker Compose, Next.js",
-    codeRepository: "https://github.com/Vinisilva0010/agent-orchestrator",
+    codeRepository: "https://github.com/Vinisilva0010/Agent-orchestration.",
   };
 
   return (
@@ -326,7 +326,7 @@ export default function AgentOrchestrationProjectPage() {
             </div>
 
             <div className="font-mono text-xs sm:text-sm bg-neutral-100 border-2 border-black p-4 space-y-2 mt-4">
-              <div><strong>REPOSITÓRIO:</strong> <a href="https://github.com/Vinisilva0010/agent-orchestrator" target="_blank" rel="noopener noreferrer" className="underline font-bold">github.com/Vinisilva0010/agent-orchestrator</a></div>
+              <div><strong>REPOSITÓRIO:</strong> <a href="https://github.com/Vinisilva0010/Agent-orchestration." target="_blank" rel="noopener noreferrer" className="underline font-bold">github.com/Vinisilva0010/Agent-orchestration.</a></div>
               <div><strong>TEST STACK E2E:</strong> <code className="font-bold">docker compose -f compose.dev.yaml up -d &amp;&amp; scripts/e2e-stack.sh start</code></div>
               <div><strong>SUÍTE DE ATAQUES:</strong> <code className="font-bold">bash scripts/attack-suite.sh &amp;&amp; cargo test --workspace</code></div>
             </div>
@@ -364,7 +364,7 @@ export default function AgentOrchestrationProjectPage() {
                 ENGINEERING RESOURCES
               </span>
               <a
-                href="https://github.com/Vinisilva0010/agent-orchestrator"
+                href="https://github.com/Vinisilva0010/Agent-orchestration."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center bg-black !text-white py-3 font-black text-xs uppercase hover:bg-neutral-800 transition-colors"
